@@ -4,25 +4,27 @@ import {
   Switch,
   Route,
 } from 'react-router-dom'
+import { Provider as ReduxProvider } from 'react-redux'
 
-import Home from './pages/Home'
-import NotFound from './pages/NotFound'
+import routes from './config/routes'
+import store from './config/store'
 import './pages/Home/Home.css'
 
 export class App extends React.Component {
 
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
-      </Router>
+      <ReduxProvider store={ store }>
+        <Router>
+          <Switch>
+            { routes.map(({ path, exact, component }) =>
+              <Route exact={ exact } path={ path } key={ path }>
+                { component }
+              </Route>
+            )}
+          </Switch>
+        </Router>
+      </ReduxProvider>
     )
   }
 }

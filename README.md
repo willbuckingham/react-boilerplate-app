@@ -1,10 +1,20 @@
-# Base
+# react-boilerplate-app
 
-This is designed to take a CRA,
+This was developed by taking the [Create React App](https://github.com/facebook/create-react-app), ejecting, applying some custom eslint rules, adding a few libraries I personally find important for modern react app development.  Some might be overkill depending on the needs of the app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Added Libraries
 
-## Available Scripts
+* [Prop Types](https://reactjs.org/docs/typechecking-with-proptypes.html)
+* [React Router Dom](https://reacttraining.com/react-router/web/guides/quick-start)
+* [Redux](https://redux.js.org/)
+  * [Dev Tools](https://github.com/zalmoxisus/redux-devtools-extension#usage)
+  * [React-Redux](https://react-redux.js.org/)
+  * [Redux-Actions](https://redux-actions.js.org/)
+  * <https://www.freecodecamp.org/news/loading-data-in-react-redux-thunk-redux-saga-suspense-hooks-666b21da1569/>
+* Enzyme
+* 
+
+## Commands
 
 In the project directory, you can run:
 
@@ -31,15 +41,9 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `npm run lint` & `npm run lint:fix`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Runs the code linting and applies fix respectively.
 
 ## Learn More
 
