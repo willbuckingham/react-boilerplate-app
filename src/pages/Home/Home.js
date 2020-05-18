@@ -3,8 +3,7 @@ import logo from './logo.svg'
 import './Home.css'
 
 export class Home extends React.Component {
-
-  render() {
+  render () {
     return (
       <div className='App'>
         <header className='App-header'>
