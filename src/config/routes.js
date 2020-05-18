@@ -6,11 +6,11 @@ export default [
   {
     path: '/',
     exact: true,
-    component: <Home />
+    component: <Home />,
   },
   {
     path: '*',
     exact: false,
-    component: <NotFound />
+    component: <NotFound />,
   },
 ]

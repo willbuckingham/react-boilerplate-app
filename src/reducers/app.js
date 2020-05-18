@@ -6,7 +6,7 @@ export default handleActions({
   [actions.initApp]: _ => ({
     ..._,
     loading: true,
-  })
+  }),
 }, {
   loading: false,
 })

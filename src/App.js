@@ -11,8 +11,7 @@ import store from './config/store'
 import './pages/Home/Home.css'
 
 export class App extends React.Component {
-
-  render() {
+  render () {
     return (
       <ReduxProvider store={ store }>
         <Router>
