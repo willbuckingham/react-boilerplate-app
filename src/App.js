@@ -12,7 +12,17 @@ import routes from './config/routes'
 import store from './config/store'
 import theme from './config/theme'
 
+import { initApp, initAppSuccess } from './actions/app'
+
 export class App extends React.Component {
+  componentWillMount () {
+    store.dispatch(initApp())
+  }
+
+  componentDidMount () {
+    store.dispatch(initAppSuccess())
+  }
+
   render () {
     return (
       <ReduxProvider store={ store }>
